@@ -1,0 +1,47 @@
+<!-- templates/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Project Name</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🚀 Project Name</h1>
+      <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About This Project</h2>
+    <p>This project is designed to solve [insert problem here] by providing an innovative and efficient solution using modern technologies like Flask, machine learning, and responsive web design.</p>
+
+    <p>Key highlights of the project include:</p>
+    <ul class="about-list">
+      <li>✅ Easy-to-use interface</li>
+      <li>✅ Responsive design for all devices</li>
+      <li>✅ Fast backend powered by Flask</li>
+      <li>✅ Real-time predictions or data processing</li>
+    </ul>
+
+    <p>Our goal is to make technology accessible and impactful through practical tools and applications.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📫 Contact</h2>
+    <p>Have questions or feedback? Feel free to <a href="mailto:youremail@example.com">email us</a> or connect on <a href="#">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Project Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
